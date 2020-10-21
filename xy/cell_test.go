@@ -15,6 +15,12 @@ func prettyClose(x, y float64) bool {
 	return math.Abs(x-y) < 0.00001
 }
 
+func TestABC(t *testing.T) {
+	cell := Encode((-112.321+180)/360, (33.123+90)/180)
+	x, y := Decode(cell)
+	fmt.Printf("%d %f %f '%s'\n", cell, x*360-180, y*180-90, cell.String())
+}
+
 func TestEncodeDecode(t *testing.T) {
 	rand.Seed(time.Now().UnixNano())
 	start := time.Now()

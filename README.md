@@ -11,9 +11,9 @@ There are three packages included in this project which handle 2, 3 and 4
 dimesions. To install any or all packages:
 
 ```
-go get -u github.com/tidwall/cell/xy    # 2 dimensional cells
-go get -u github.com/tidwall/cell/xyz   # 3 dimensional cells
-go get -u github.com/tidwall/cell/xyzm  # 4 dimensional cells
+go get -u github.com/tidwall/cell.go/xy    # 2 dimensional cells
+go get -u github.com/tidwall/cell.go/xyz   # 3 dimensional cells
+go get -u github.com/tidwall/cell.go/xyzm  # 4 dimensional cells
 ```
 
 ## Using

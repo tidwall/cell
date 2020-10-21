@@ -1,4 +1,4 @@
-package xyzm
+package xyz
 
 import "github.com/tidwall/cell.go/xyzm"
 

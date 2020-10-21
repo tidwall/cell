@@ -1,4 +1,4 @@
-package xyzm
+package xyz
 
 import (
 	"fmt"

@@ -1,6 +1,6 @@
 package xyz
 
-import "github.com/tidwall/cell.go/xyzm"
+import "github.com/tidwall/cell/xyzm"
 
 // Cell is a 128-bit integer that interleaves three coordinates.
 type Cell struct {

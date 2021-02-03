@@ -30,7 +30,7 @@ func clip(x float64) float64 {
 // Values outside that range are clipped.
 func Encode(x, y float64) Cell {
 
-	// Produce 32-bit integers for X/Y/Z/M -> A/B/C/D
+	// Produce 32-bit integers for X/Y-> A/B
 	a := uint32(clip(x) * (1 << 32))
 	b := uint32(clip(y) * (1 << 32))
 

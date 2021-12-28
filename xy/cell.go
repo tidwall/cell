@@ -12,6 +12,12 @@ func (c Cell) String() string {
 	return string(s)
 }
 
+// Quad returns a value or 0, 1, 2, or 3 representing the "quad" for the cell
+// at a specified level.
+func (c Cell) Quad(forLevel int) int {
+	return int((uint64(c) >> (64 - forLevel*2)) & 3)
+}
+
 // The maximum coord that is less than 1.0. Equal to math.Nextafter(1, 0).
 const maxCoord = 0.99999999999999988897769753748434595763683319091796875
 

@@ -83,3 +83,21 @@ func TestPerf(t *testing.T) {
 		Decode(cells[i])
 	})
 }
+
+func TestQuad(t *testing.T) {
+	if Encode(0.2, 0.2).Quad(0) != 0 {
+		panic("!")
+	}
+	if Encode(0.2, 0.2).Quad(1) != 0 {
+		panic("!")
+	}
+	if Encode(0.2, 0.6).Quad(1) != 1 {
+		panic("!")
+	}
+	if Encode(0.6, 0.2).Quad(1) != 2 {
+		panic("!")
+	}
+	if Encode(0.6, 0.6).Quad(1) != 3 {
+		panic("!")
+	}
+}
